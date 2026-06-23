@@ -355,8 +355,9 @@ p { color: var(--text-mid); }
 }
 .project-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-4px); }
 .project-img {
-  height: 180px;
-  display: flex; align-items: center; justify-content: center;
+  height: 220px;
+  position: relative;
+  overflow: hidden;
 }
 .project-img-label {
   font-family: var(--font-display);

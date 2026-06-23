@@ -355,40 +355,85 @@
       </div>
 
       <div class="divider-text reveal"><span>or fill out the form below</span></div>
-      <form
-      class="contact-form reveal"
-      action="https://formspree.io/f/xlgyddlr"
-      method="POST">
-        <div class="form-row">
-          <div class="form-group">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" placeholder="Maria Garcia" required />
-          </div>
-          <div class="form-group">
-            <label for="phone">Best way to reach you</label>
-            <input type="text" id="phone" name="phone" placeholder="Phone number or email" required />
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="business">Business Name</label>
-          <input type="text" id="business" name="business" placeholder="Garcia's Bakery" />
-        </div>
-        <div class="form-group">
-          <label for="package">Which package are you interested in?</label>
-          <select id="package" name="package">
-            <option value="">Not sure yet</option>
-            <option value="starter">Starter Website ($100–$150)</option>
-            <option value="business">Business Website ($200–$300)</option>
-            <option value="custom">Custom Website ($350+)</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="message">Tell me a little about your business</label>
-          <textarea id="message" name="message" rows="4" placeholder="What do you do? Where are you located? Anything else you want me to know?" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
-        <p class="form-note">I'll reply within 1 business day. After we chat, I'll send you a short form to gather everything I need for your website.</p>
-      </form>
+<form
+  class="contact-form reveal"
+  action="https://formspree.io/f/xlgyddlr"
+  method="POST">
+
+  <input
+    type="hidden"
+    name="_subject"
+    value="New Website Inquiry - Websites by Gabby">
+
+  <div class="form-row">
+    <div class="form-group">
+      <label for="name">Your Name</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Maria Garcia"
+        required />
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="maria@example.com"
+        required />
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="phone">Phone Number (Optional)</label>
+    <input
+      type="tel"
+      id="phone"
+      name="phone"
+      placeholder="(817) 555-1234" />
+  </div>
+
+  <div class="form-group">
+    <label for="business">Business Name</label>
+    <input
+      type="text"
+      id="business"
+      name="business"
+      placeholder="Garcia's Bakery" />
+  </div>
+
+  <div class="form-group">
+    <label for="package">Which package are you interested in?</label>
+    <select id="package" name="package">
+      <option value="">Not sure yet</option>
+      <option value="starter">Starter Website ($150)</option>
+      <option value="business">Business Website ($250)</option>
+      <option value="custom">Custom Website ($400+)</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="message">Tell me a little about your business</label>
+    <textarea
+      id="message"
+      name="message"
+      rows="4"
+      placeholder="What do you do? Where are you located? Anything else you want me to know?"
+      required></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-primary btn-full">
+    Send Message
+  </button>
+
+  <p class="form-note">
+    I'll reply within 1 business day. After we chat, I'll send you a short form to gather everything I need for your website.
+  </p>
+
+</form>
     </div>
   </section>
 

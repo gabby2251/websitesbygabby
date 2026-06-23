@@ -460,3 +460,22 @@ input:focus, textarea:focus, select:focus { outline: none; border-color: var(--g
 .footer-links { display: flex; gap: 20px; margin-top: 4px; }
 .footer-links a { font-size: 0.83rem; color: rgba(255,255,255,0.5); transition: color 0.2s; }
 .footer-links a:hover { color: #fff; }
+
+/* =============================================
+   TRUST BAR
+   ============================================= */
+
+.trust-bar {
+  background: var(--card-bg);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 18px 0;
+  text-align: center;
+}
+
+.trust-bar p {
+  margin: 0;
+  color: var(--text);
+  font-size: 0.95rem;
+  font-weight: 500;
+}

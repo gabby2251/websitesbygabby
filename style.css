@@ -288,11 +288,22 @@ p { color: var(--text-mid); }
 }
 .included-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px 24px;
   margin-top: 12px;
 }
 .included-grid span { font-size: 0.88rem; font-weight: 500; color: #1B4332; }
+.included-note {
+  margin-top: 16px;
+  font-size: 0.83rem;
+  color: #1B4332;
+  text-align: center;
+  font-style: italic;
+  opacity: 0.85;
+}
+@media (max-width: 560px) {
+  .included-grid { grid-template-columns: repeat(2, 1fr); }
+}
 
 .payment-row {
   display: flex;
